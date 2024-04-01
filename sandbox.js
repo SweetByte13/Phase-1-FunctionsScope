@@ -23,28 +23,80 @@
 /* ----------------------------------------------------- 
     NAMED FUNCTIONS
 ----------------------------------------------------- */
+function sayHello() {
+    console.log("Hello there!")
+}
+
+// sayHello()
+
+function sayHelloToYou(name) {
+    console.log("Hello there, " + name + "!")
+}
+
+// sayHelloToYou("James");
+
+
+function addTwoNumbers(num1, num2) {
+    return num1 + num2;
+}
+
+sum = addTwoNumbers(2, 4)
+
+// console.log(sum)
+
 
 
 
 /* ----------------------------------------------------- 
     ANONYMOUS FUNCTIONS
 ----------------------------------------------------- */
+const squaredNum = function (num) {
+   // return num + num
+    return num ** 2
+}
 
+square = squaredNum(6)
 
-
+//console. log (square);
 /* ----------------------------------------------------- 
     ARROW FUNCTIONS
 ----------------------------------------------------- */
+ const cubedName = (num) => {
+        return num ** 3
+    }
+
+cube = cubedName(3)
+
+//console.log(cube);
 
 
 
 /* ----------------------------------------------------- 
     SCOPE
 ----------------------------------------------------- */
+let num1 = 3
 
+function incrementer() {
+    let num2 = 8 
 
+    num1 = num1 + 1
+    num2 = num2 + 1
 
+    return num2
+}
+
+num2 = incrementer()
+
+ console.log(`num1: ${num1}`)
+ console.log(`num2: ${num2}`)
 /* ----------------------------------------------------- 
     ARRAY METHODS WITH CALLBACK FUNCTIONS
 ----------------------------------------------------- */
 
+const nums = [1, 2, 3, 4, 5, 6]
+
+//nums.forEach ((num) => console.log(num ** 2));
+
+nums.forEach(function consoleLogNum(num) {
+    //console.log(num)
+})
